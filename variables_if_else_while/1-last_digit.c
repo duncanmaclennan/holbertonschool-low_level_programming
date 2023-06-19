@@ -20,5 +20,8 @@ int main(void)
                 printf("%d and is greater than 5", lastDigit);
         }
 
+
+        printf("\n");
+
         return (0);
 }
