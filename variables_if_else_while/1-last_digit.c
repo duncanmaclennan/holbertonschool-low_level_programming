@@ -8,6 +8,7 @@
 int main(void)
 {
         int n;
+        int printf(const char *format, ...);
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
