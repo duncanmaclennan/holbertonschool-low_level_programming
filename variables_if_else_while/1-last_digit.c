@@ -9,8 +9,8 @@ int main(void)
 {
         int n;
         n=0;
-        int printf(const char *format, ...);
         int lastDigit = abs(n) % 10;
+        int printf(const char *format, ...);
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
