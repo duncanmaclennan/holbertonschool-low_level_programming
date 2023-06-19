@@ -6,7 +6,7 @@
 int main(void)
 {
 int num = 0;
-int letter = 'a';
+char letter = 'a';
 while (num < 10)
 {
 putchar(num);
