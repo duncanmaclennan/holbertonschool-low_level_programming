@@ -8,7 +8,7 @@
 int main(void)
 {
         int n;
-        n=0
+        n=0;
         int printf(const char *format, ...);
         int lastDigit = abs(n) % 10;
 
