@@ -12,6 +12,12 @@ putchar('0' + num);
 num = num + 1;
 }
 
+while (letter <= 'f')
+{
+putchar(letter);
+letter = letter + 1;
+}
+
 putchar('\n');
 
 return (0);
