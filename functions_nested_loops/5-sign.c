@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign: This is a description
+ * print_sign - This is a description
  * @n:  this is the integer passed
  * Return: returns 1 if true, 0 if false
  */
