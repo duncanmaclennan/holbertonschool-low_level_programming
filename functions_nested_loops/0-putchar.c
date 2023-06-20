@@ -3,7 +3,8 @@
  * main - This is a description
  * Return: This is the return action
  */
-int main(void) {
+int main(void)
+{
 putchar('_');
 putchar('p');
 putchar('u');
