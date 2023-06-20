@@ -6,10 +6,10 @@
 
 void print_alphabet(void)
 {
-	int i = 0;
+	int i = 1;
 	while(i < 26)
 	{
-		_putchar('a' + i);
+		_putchar(i);
 		i = i +1;
 	}
 	_putchar('\n');
