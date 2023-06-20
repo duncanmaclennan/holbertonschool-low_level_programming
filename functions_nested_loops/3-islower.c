@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - This is a description
+ * c - this is the character passed
  * Return: This is the return action
  */
 int _islower(int c)
