@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - This is a description
+ * _islower - This is a description
  * Return: This is the return action
  */
 int _islower(int c)
