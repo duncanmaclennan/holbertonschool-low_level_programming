@@ -1,23 +1,17 @@
 #include "main.h"
 /**
- * main - This is a description
+ * print_alphabet - This is a description
  * Return: This is the return action
  */
-
 void print_alphabet(void)
 {
-	int i = 1;
-	while(i < 26)
+	int i = 0;
+
+	while (i < 26)
 	{
-		_putchar(i);
-		i = i +1;
+		_putchar('a' + i);
+		i = (i + 1);
 	}
 	_putchar('\n');
 
-}
-
-int main(void) {
-    printAlphabet();
-
-    return 0;
 }
