@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _islower: This is a description
- * parameter c: this is the character passed
- * Return: This is the return action
+ * _islower - This is a description
+ * int c - this is the character passed
+ * Return - This is the return action
  */
 int _islower(int c)
 {
