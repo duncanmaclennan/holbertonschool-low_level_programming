@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - tests if character is digit
- * @c: the character
+ * print_numbers - prints single integers
  * Return: 1 if true, 0 if false
  */
 void print_numbers(void)
