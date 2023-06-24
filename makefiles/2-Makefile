@@ -1,9 +1,9 @@
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:.c=.o)
 NAME = school
 
-all: school.c
-	$(CC) -c -o main.o main.c
-	$(CC) -c -o school.o school.c
+all: $(OBJ)
+	$(CC) -c -o $(filter main.o, $(OBJ)) $(filter main.c, $(SRC))
+	$(CC) -c -o $(filter school.o, $(OBJ)) $(filter school.c, $(SRC))
 	$(CC) $(OBJ) -o $(NAME)
