@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * fizz_buzz - tests if character is digit
+ * main: runs the program
  * Return: the output
  */
 void fizz_buzz(void)
@@ -35,9 +36,12 @@ void fizz_buzz(void)
 		n = n + 1;
 	}
 }
-
+/**
+ *main- runs the program
+ * Return: the output
+ */
 int main(void)
 {
-    fizz_buzz();
-    return (0);
+	fizz_buzz();
+	return (0);
 }
