@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * print_most_numbers - tests if character is digit
+ * Return: the output
+ */
+void fizz_buzz(void)
+{
+	int n;
+	int fizz;
+	int buzz;
+
+	n = 0;
+	fizz = n % 3;
+	buzz = n % 5;
+
+	while (n <= 100)
+	{
+		if (fizz == 0 && buzz == 0)
+		{
+			_
+}
