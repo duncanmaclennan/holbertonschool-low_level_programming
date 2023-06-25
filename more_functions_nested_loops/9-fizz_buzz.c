@@ -10,15 +10,15 @@ void fizz_buzz(void)
 	int fizz;
 	int buzz;
 
-	n = 0;
-	fizz = n % 3;
-	buzz = n % 5;
+	n = 1;
 
 	while (n <= 100)
 	{
+		fizz = n % 3;
+		buzz = n % 5;
 		if (fizz == 0 && buzz == 0)
 		{
-			printf("Fizz Buzz ");
+			printf("FizzBuzz ");
 		}
 		else if (buzz == 0)
 		{
@@ -34,4 +34,10 @@ void fizz_buzz(void)
 		}
 		n = n + 1;
 	}
+}
+
+int main(void)
+{
+    fizz_buzz();
+    return (0);
 }
