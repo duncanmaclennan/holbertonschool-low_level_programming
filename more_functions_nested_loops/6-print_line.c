@@ -9,7 +9,7 @@ void print_line(int n)
 	int k;
 
 	k = 0;
-	while (k <= n)
+	while (k < n)
 	{
 		_putchar('_');
 		k = k + 1;
