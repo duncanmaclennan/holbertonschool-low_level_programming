@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * swap_int - tests if character is digit
+ * @a: the first integer
+ * @b: the second integer
+ */
