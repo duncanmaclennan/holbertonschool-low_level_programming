@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ * reset_to_98 - tests if character is digit
+ * @n: the integer
+ */
+
+void swap_int(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
+}
