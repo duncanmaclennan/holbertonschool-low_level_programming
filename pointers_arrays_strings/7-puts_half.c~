@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+ * print_rev - tests if character is digit
+ * @s: the first integer
+ */
+void puts_half(char *str) {
+    int length = 0;
+    int i;
+
+    // Find the length of the string
+    while (str[length] != '\0') {
+        length++;
+    }
+
+    // Determine the starting index based on the length
+    int start = (length - 1) / 2;
+    int end = length - 1;
+
+    // Print the second half of the string
+    for (i = start; i <= end; i++) {
+        _putchar(str[i]);
+    }
+
+    _putchar('\n');
+}
