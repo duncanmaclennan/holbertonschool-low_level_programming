@@ -1,0 +1,6 @@
+#include "main.h"
+/**
+ * _atoi - tests if character is digit
+ * @s: the first integer
+ * Return: the conversion
+ */
