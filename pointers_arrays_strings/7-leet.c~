@@ -1,0 +1,24 @@
+#include <stdio.h>
+/**
+ * _atoi - tests if character is digit
+ * @s: the first integer
+ * Return: the conversion
+ */
+char *leet(char *str) {
+    char *ptr = str;
+    char *leet_chars = "aAeEoOtTlL";
+    char *leet_replacements = "4433007711";
+
+    while (*ptr != '\0') {
+        int i;
+        for (i = 0; i < 10; i++) {
+            if (*ptr == leet_chars[i]) {
+                *ptr = leet_replacements[i];
+                break;
+            }
+        }
+        ptr++;
+    }
+
+    return str;
+}
