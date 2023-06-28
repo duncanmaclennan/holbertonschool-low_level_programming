@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * _strspn - tests if character is digit
+ * @s: the first integer
+ * @accept: the bytes
+ * Return: the conversion
+ */
+char *_strpbrk(char *s, char *accept) {
+    while (*s != '\0') {
+        char *ptr = accept;
+        while (*ptr != '\0') {
+            if (*ptr == *s) {
+                return s;
+            }
+            ptr++;
+        }
+        s++;
+    }
+    return NULL;
+}
