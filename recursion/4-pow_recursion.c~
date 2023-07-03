@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * _strlen_recursion - prints a string
+ * @s: location of the string in memory
+ * Return: the conversion
+ */
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (x * _pow_recursion(x, y - 1));
+	}
+}
