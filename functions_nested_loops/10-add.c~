@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ * add - This is a description
+ * Return: returns the result
+ */
+
+int add(int m, int n)
+{
+	int x;
+	x = m + n;
+	return (x);
+}

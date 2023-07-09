@@ -1,0 +1,7 @@
+#include "main.h"
+#include <stdlib.h>
+/**
+ * print_last_digit - This is a description
+ * @n:  this is the integer passed
+ * Return: returns the result
+ */
