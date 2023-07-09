@@ -1,0 +1,20 @@
+#include <stdio.h>
+/**
+ * string_toupper - tests if character is digit
+ * @str: the first integer
+ * Return: the conversion
+ */
+char *string_toupper(char *str)
+{
+	char *ptr = str;
+
+	while (*ptr != '\0')
+	{
+		if (*ptr >= 'a' && *ptr <= 'z')
+		{
+			*ptr = *ptr - 'a' + 'A';
+		}
+		ptr++;
+	}
+	return (str);
+}
