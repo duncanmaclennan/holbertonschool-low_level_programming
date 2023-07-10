@@ -5,34 +5,33 @@
  * @str: the string
  * Return: the pointer
  */
+
 char *_strdup(char *str)
 {
-	int length;
 	char *duplicate;
+	int length;
 	int i;
 
-	length = 0;
-	duplicate = (char *)malloc(length * sizeof(char));
+	if (str == NULL)
+	{
+		return NULL;
+	}
 
+	length = 0;
 	while (str[length] != '\0')
 	{
 		length++;
 	}
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-
+	duplicate = (char *)malloc((length + 1) * sizeof(char));
 	if (duplicate == NULL)
 	{
-		return (NULL);
+		return NULL;
 	}
 
 	for (i = 0; i <= length; i++)
 	{
 		duplicate[i] = str[i];
 	}
-
-	return (duplicate);
+	return duplicate;
 }
