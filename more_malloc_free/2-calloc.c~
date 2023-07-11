@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+ * _strdup - returns a pointer
+ * @str: the string
+ * Return: the pointer
+ */
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+    if (nmemb == 0 || size == 0) {
+        return NULL;
+    }
+
+    void *ptr = malloc(nmemb * size);
+    if (ptr == NULL) {
+        exit(1);
+    }
+
+    memset(ptr, 0, nmemb * size);
+
+    return ptr;
+}
