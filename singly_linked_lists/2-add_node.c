@@ -4,21 +4,6 @@
 #include "lists.h"
 
 /**
- * strdup - A function prints a list
- * @s: a string
- * Return: the d
- */
-char *strdup(const char *s)
-{
-	char *d = malloc(strlen(s) + 1);
-
-	if (d == NULL)
-		return (NULL);
-	strcpy(d, s);
-	return (d);
-}
-
-/**
  * add_node - A function prints a list
  * @head: the list
  * @str: the string
