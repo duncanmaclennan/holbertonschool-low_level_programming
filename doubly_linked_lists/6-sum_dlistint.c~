@@ -5,7 +5,6 @@
 /**
  * sum_dlistint - sums nodes
  * @head: the list
- * Return: the sum
  */
 
 int sum_dlistint(dlistint_t *head)
