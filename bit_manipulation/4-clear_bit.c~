@@ -5,7 +5,6 @@
  * clear_bit - sets value of bit at index
  * @n: pointer to the binary
  * @index: the index
- * Return: -1 if fail, 1 if success
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
