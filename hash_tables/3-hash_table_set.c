@@ -15,9 +15,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     hash_node_t *node = ht->array[index];
 
     if (!key || !*key || !ht)
-    {
         return (0);
-    }
+    if (ht == NULL)
+	    return (0);
     while (node)
     {
         if (strcmp(node->key, key) == (0))
