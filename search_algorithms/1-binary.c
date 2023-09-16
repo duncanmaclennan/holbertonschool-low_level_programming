@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "search_algos.h"
+#include <stdio.h>
 
 /**
  * print_array - Prints an array of integers.
@@ -8,17 +8,18 @@
  */
 void print_array(int *array, size_t size)
 {
-    size_t i;
-    printf("Searching in array: ");
-    for (i = 0; i < size; i++)
-    {
-        printf("%d", array[i]);
-        if (i < size - 1)
-        {
-            printf(", ");
-        }
-    }
-    printf("\n");
+	size_t i;
+
+	printf("Searching in array: ");
+	for (i = 0; i < size; i++)
+	{
+		printf("%d", array[i]);
+		if (i < size - 1)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
 }
 
 /**
@@ -33,32 +34,36 @@ void print_array(int *array, size_t size)
  */
 int binary_search(int *array, size_t size, int value)
 {
-    size_t low = 0, high = size - 1, mid;
+	size_t low;
+	size_t high;
+	size_t mid;
 
-    if (array == NULL)
-    {
-        return (-1);
-    }
+	if (array == NULL)
+	{
+		return (-1);
+	}
 
-    while (low <= high)
-    {
-        print_array(array + low, high - low + 1);
+	low = 0;
+	high = size - 1;
 
-        mid = low + (high - low) / 2;
+	while (low <= high)
+	{
+		print_array(array + low, high - low + 1);
+		mid = low + (high - low) / 2;
 
-        if (array[mid] == value)
-        {
-            return ((int)mid);
-        }
-        else if (array[mid] < value)
-        {
-            low = mid + 1;
-        }
-        else
-        {
-            high = mid - 1;
-        }
-    }
+		if (array[mid] == value)
+		{
+			return ((int)mid);
+		}
+		else if (array[mid] < value)
+		{
+			low = mid + 1;
+		}
+		else
+		{
+			high = mid - 1;
+		}
+	}
 
-    return (-1);
+	return (-1);
 }
